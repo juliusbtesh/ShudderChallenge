@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		164CCA8EA213EDDE27B078EF /* Pods_shudder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D5B70D4DA5A3FE0F01F7722 /* Pods_shudder.framework */; };
 		4440EC8B215B259F00F8547D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440EC8A215B259F00F8547D /* AppDelegate.swift */; };
-		4440EC8D215B259F00F8547D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440EC8C215B259F00F8547D /* ViewController.swift */; };
+		4440EC8D215B259F00F8547D /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440EC8C215B259F00F8547D /* FeaturedViewController.swift */; };
 		4440EC90215B259F00F8547D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4440EC8E215B259F00F8547D /* Main.storyboard */; };
 		4440EC92215B25A200F8547D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4440EC91215B25A200F8547D /* Assets.xcassets */; };
 		4440EC95215B25A200F8547D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4440EC93215B25A200F8547D /* LaunchScreen.storyboard */; };
+		4440EC9D215B28A000F8547D /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440EC9C215B28A000F8547D /* CategoryCell.swift */; };
+		4440EC9F215B2D7900F8547D /* FilmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440EC9E215B2D7900F8547D /* FilmCell.swift */; };
+		4440ECA1215B8E5000F8547D /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440ECA0215B8E5000F8547D /* FlickrAPI.swift */; };
+		4440ECA3215B8E6E00F8547D /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440ECA2215B8E6E00F8547D /* FlickrPhoto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D5B70D4DA5A3FE0F01F7722 /* Pods_shudder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_shudder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4440EC87215B259F00F8547D /* shudder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shudder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4440EC8A215B259F00F8547D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4440EC8C215B259F00F8547D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4440EC8C215B259F00F8547D /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		4440EC8F215B259F00F8547D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4440EC91215B25A200F8547D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4440EC94215B25A200F8547D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4440EC96215B25A200F8547D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4440EC9C215B28A000F8547D /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		4440EC9E215B2D7900F8547D /* FilmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCell.swift; sourceTree = "<group>"; };
+		4440ECA0215B8E5000F8547D /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
+		4440ECA2215B8E6E00F8547D /* FlickrPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhoto.swift; sourceTree = "<group>"; };
+		563F4AF8E2EB1EAE29B9A30D /* Pods-shudder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shudder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-shudder/Pods-shudder.debug.xcconfig"; sourceTree = "<group>"; };
+		936504E88669F3DBC23C5D5F /* Pods-shudder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shudder.release.xcconfig"; path = "Pods/Target Support Files/Pods-shudder/Pods-shudder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164CCA8EA213EDDE27B078EF /* Pods_shudder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,8 @@
 			children = (
 				4440EC89215B259F00F8547D /* shudder */,
 				4440EC88215B259F00F8547D /* Products */,
+				B4AA9ED2B64203877D9474DF /* Pods */,
+				7CE587382E5E4BDCC36131FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +70,34 @@
 			isa = PBXGroup;
 			children = (
 				4440EC8A215B259F00F8547D /* AppDelegate.swift */,
-				4440EC8C215B259F00F8547D /* ViewController.swift */,
+				4440EC8C215B259F00F8547D /* FeaturedViewController.swift */,
+				4440EC9C215B28A000F8547D /* CategoryCell.swift */,
+				4440EC9E215B2D7900F8547D /* FilmCell.swift */,
+				4440ECA0215B8E5000F8547D /* FlickrAPI.swift */,
+				4440ECA2215B8E6E00F8547D /* FlickrPhoto.swift */,
 				4440EC8E215B259F00F8547D /* Main.storyboard */,
 				4440EC91215B25A200F8547D /* Assets.xcassets */,
 				4440EC93215B25A200F8547D /* LaunchScreen.storyboard */,
 				4440EC96215B25A200F8547D /* Info.plist */,
 			);
 			path = shudder;
+			sourceTree = "<group>";
+		};
+		7CE587382E5E4BDCC36131FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D5B70D4DA5A3FE0F01F7722 /* Pods_shudder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4AA9ED2B64203877D9474DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				563F4AF8E2EB1EAE29B9A30D /* Pods-shudder.debug.xcconfig */,
+				936504E88669F3DBC23C5D5F /* Pods-shudder.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4440EC99215B25A200F8547D /* Build configuration list for PBXNativeTarget "shudder" */;
 			buildPhases = (
+				01212C613D9D33BECD94561C /* [CP] Check Pods Manifest.lock */,
 				4440EC83215B259F00F8547D /* Sources */,
 				4440EC84215B259F00F8547D /* Frameworks */,
 				4440EC85215B259F00F8547D /* Resources */,
+				57500C6277C4B1398B901D70 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +168,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01212C613D9D33BECD94561C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-shudder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57500C6277C4B1398B901D70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-shudder/Pods-shudder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-shudder/Pods-shudder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4440EC83215B259F00F8547D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4440EC8D215B259F00F8547D /* ViewController.swift in Sources */,
+				4440EC8D215B259F00F8547D /* FeaturedViewController.swift in Sources */,
+				4440ECA3215B8E6E00F8547D /* FlickrPhoto.swift in Sources */,
+				4440EC9F215B2D7900F8547D /* FilmCell.swift in Sources */,
 				4440EC8B215B259F00F8547D /* AppDelegate.swift in Sources */,
+				4440EC9D215B28A000F8547D /* CategoryCell.swift in Sources */,
+				4440ECA1215B8E5000F8547D /* FlickrAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +361,7 @@
 		};
 		4440EC9A215B25A200F8547D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 563F4AF8E2EB1EAE29B9A30D /* Pods-shudder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +380,7 @@
 		};
 		4440EC9B215B25A200F8547D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 936504E88669F3DBC23C5D5F /* Pods-shudder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
