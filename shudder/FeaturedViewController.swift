@@ -67,7 +67,7 @@ extension FeaturedViewController: UITableViewDelegate {
         if section == 0 {
             return 5
         } else {
-            return 30
+            return 28
         }
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -84,7 +84,7 @@ extension FeaturedViewController: UITableViewDelegate {
         headerLabel.font = UIFont.init(name: "Helvetica", size: 14)
         
         let headerLabelHeight: CGFloat = headerView.frame.size.height*0.7
-        headerLabel.frame = CGRect(x: 5, y: headerLabelHeight/2-5, width: headerView.frame.size.width-10, height: headerLabelHeight)
+        headerLabel.frame = CGRect(x: 10, y: headerLabelHeight/2-5, width: headerView.frame.size.width-20, height: headerLabelHeight)
                 
         headerView.addSubview(headerLabel)
         
