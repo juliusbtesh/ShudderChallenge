@@ -15,7 +15,6 @@ class HeroCell: CategoryCell {
     private var alreadyInitialized: Bool = false
     
     func setupDataForCarousel() {
-        
         // Grab references to the first and last items
         // They're typed as id so you don't need to worry about what kind
         // of objects the originalArray is holding
