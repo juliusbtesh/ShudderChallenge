@@ -27,7 +27,7 @@ class FlickrAPI {
         let searchTask = URLSession.shared.dataTask(with: url as URL, completionHandler: {data, response, error -> Void in
             
             if error != nil {
-                print("Error fetching photos: \(error)")
+                print("Error fetching photos: \(String(describing: error))")
                 onCompletion(error as NSError?, nil)
                 return
             }
