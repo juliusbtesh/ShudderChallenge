@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FlickrProvider {
+class FlickrAPI {
     
     typealias FlickrResponse = (NSError?, [FlickrPhoto]?) -> Void
     
@@ -20,9 +20,9 @@ class FlickrProvider {
         static let invalidAccessErrorCode = 100
     }
     
-    class func fetchPhotosForSearchText(searchText: String, count: Int = 25, onCompletion: @escaping FlickrResponse) -> Void {
+    class func fetchPhotosForSearchText(searchText: String, count: Int = 25, page: Int = 0, onCompletion: @escaping FlickrResponse) -> Void {
         let escapedSearchText: String = searchText.addingPercentEncoding(withAllowedCharacters:.urlHostAllowed)!
-        let urlString: String = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(Keys.flickrKey)&tags=\(escapedSearchText)&per_page=\(count)&format=json&nojsoncallback=1"
+        let urlString: String = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(Keys.flickrKey)&tags=\(escapedSearchText)&per_page=\(count)&page=\(page)&format=json&nojsoncallback=1"
         let url: NSURL = NSURL(string: urlString)!
         let searchTask = URLSession.shared.dataTask(with: url as URL, completionHandler: {data, response, error -> Void in
             
