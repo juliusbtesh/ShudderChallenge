@@ -8,6 +8,8 @@
 
 import UIKit
 
+let PADDING:CGFloat = 5
+
 class FeaturedViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -48,7 +50,6 @@ class FeaturedViewController: UIViewController {
             if let photos = photos {
                 self.categoriesPhotos[index] = photos
                 DispatchQueue.main.sync {
-//                                    self.tableView.reloadData()
                     self.tableView.reloadSections(IndexSet(integer: index), with: .automatic)
                 }
             }
@@ -65,7 +66,7 @@ extension FeaturedViewController: UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
-            return 5
+            return PADDING
         } else {
             return 28
         }
@@ -84,7 +85,7 @@ extension FeaturedViewController: UITableViewDelegate {
         headerLabel.font = UIFont.init(name: "Helvetica", size: 14)
         
         let headerLabelHeight: CGFloat = headerView.frame.size.height*0.7
-        headerLabel.frame = CGRect(x: 10, y: headerLabelHeight/2-5, width: headerView.frame.size.width-20, height: headerLabelHeight)
+        headerLabel.frame = CGRect(x: (PADDING*2), y: headerLabelHeight/2-PADDING, width: headerView.frame.size.width-(PADDING*4), height: headerLabelHeight)
                 
         headerView.addSubview(headerLabel)
         

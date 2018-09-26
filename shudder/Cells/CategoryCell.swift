@@ -38,9 +38,8 @@ class CategoryCell: UITableViewCell {
     
     func cellWidth() -> CGFloat {
         let itemsPerRow:CGFloat = 4.0
-        let padding:CGFloat = 5.0
         
-        var itemWidth = (collectionView.bounds.width / itemsPerRow) - padding
+        var itemWidth = (collectionView.bounds.width / itemsPerRow) - PADDING
         itemWidth *= 1.15
         
         return itemWidth
@@ -71,9 +70,7 @@ extension CategoryCell: UICollectionViewDataSource {
 extension CategoryCell : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let padding:CGFloat = 5.0
-        
-        let itemHeight = collectionView.bounds.height - (2 * padding)
+        let itemHeight = collectionView.bounds.height - (2 * PADDING)
         
         return CGSize(width: cellWidth(), height: itemHeight)
     }

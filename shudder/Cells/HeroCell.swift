@@ -49,9 +49,7 @@ class HeroCell: CategoryCell {
     }
     
     override func cellWidth() -> CGFloat {
-        let padding:CGFloat = 5.0
-        
-        let itemWidth = collectionView.bounds.width - (8*padding)
+        let itemWidth = collectionView.bounds.width - (8*PADDING)
         
         return itemWidth
     }
@@ -77,16 +75,14 @@ class HeroCell: CategoryCell {
             
             // user is scrolling to the right from the last item to the 'fake' item 1.
             // reposition offset to show the 'real' item 1 at the left-hand end of the collection view
-            
             let newIndexPath = IndexPath(item: 1, section: 0)
             
             collectionView.scrollToItem(at: newIndexPath, at: .centeredHorizontally, animated: false)
             
-        } else if scrollView.contentOffset.x <= 0 {//itemWidth()+5)  {
+        } else if scrollView.contentOffset.x <= 0 {
             
             // user is scrolling to the left from the first item to the fake 'item N'.
             // reposition offset to show the 'real' item N at the right end end of the collection view
-            
             let newIndexPath = IndexPath(item: films.count-2, section: 0)
             collectionView.scrollToItem(at: newIndexPath, at: .centeredHorizontally, animated: false)
         }
