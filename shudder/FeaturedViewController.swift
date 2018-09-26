@@ -59,10 +59,10 @@ class FeaturedViewController: UIViewController {
 
 extension FeaturedViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 0 {
-            return 200
+        if indexPath.section == 0 {
+            return 220
         }
-        return 150
+        return 180
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
