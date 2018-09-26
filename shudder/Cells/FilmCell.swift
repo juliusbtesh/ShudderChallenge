@@ -11,13 +11,14 @@ import SDWebImage
 
 class FilmCell: UICollectionViewCell {
     
+    //@IBOutlet weak var imageContainer: UIView!
     @IBOutlet weak var imageView: UIImageView?
     
     var photo: FlickrPhoto?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
+
         layer.cornerRadius = 5
     }
     
